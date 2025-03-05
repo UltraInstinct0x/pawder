@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home, Matches, Messages, Profile } from "./screens";
+import { Home, Matches, Messages, Profile, Chat } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 
@@ -67,7 +67,7 @@ const App = () => (
             />
 
             <Tab.Screen
-              name="Chat"
+              name="Messages" // Changed from "Chat" to "Messages"
               component={Messages}
               options={{
                 tabBarIcon: ({ focused }) => (
@@ -96,6 +96,12 @@ const App = () => (
           </Tab.Navigator>
         )}
       </Stack.Screen>
+      
+      <Stack.Screen 
+        name="Chat" 
+        component={Chat}
+        options={{ headerShown: true }}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 );

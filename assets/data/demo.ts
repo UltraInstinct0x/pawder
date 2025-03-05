@@ -21,6 +21,12 @@ const data: DataT[] = [
     message:
       "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
     image: IMAGE_01,
+    age: "25",
+    location: "New York, NY",
+    info1: 'Straight, Single, 5"8',
+    info2: "Coffee Lover, Foodie",
+    info3: "Hiking, Reading, Coffee Shops",
+    info4: "Last seen: 2h ago",
   },
   {
     id: 2,
@@ -31,6 +37,12 @@ const data: DataT[] = [
     isOnline: false,
     message: "Someone like you. Someone who'll rattle the cages.",
     image: IMAGE_02,
+    age: "30",
+    location: "Los Angeles, CA",
+    info1: 'Straight, Single, 5"6',
+    info2: "Yoga Enthusiast, Vegan",
+    info3: "Beaches, Yoga Studios, Vegan Restaurants",
+    info4: "Last seen: 5h ago",
   },
   {
     id: 3,
@@ -42,6 +54,12 @@ const data: DataT[] = [
     message:
       "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
     image: IMAGE_03,
+    age: "28",
+    location: "Chicago, IL",
+    info1: 'Straight, Single, 6"0',
+    info2: "Gamer, Tech Enthusiast",
+    info3: "Gaming, Tech Meetups, Coffee Shops",
+    info4: "Last seen: 1d ago",
   },
   {
     id: 4,
@@ -52,6 +70,12 @@ const data: DataT[] = [
     isOnline: true,
     message: "Bats frighten me. It's time my enemies shared my dread.",
     image: IMAGE_04,
+    age: "32",
+    location: "San Francisco, CA",
+    info1: 'Straight, Single, 5"9',
+    info2: "Cyclist, Foodie",
+    info3: "Cycling, Food Festivals, Parks",
+    info4: "Last seen: 3h ago",
   },
   {
     id: 5,
@@ -62,6 +86,12 @@ const data: DataT[] = [
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
+    age: "29",
+    location: "Austin, TX",
+    info1: 'Straight, Single, 5"11',
+    info2: "Musician, Coffee Lover",
+    info3: "Live Music, Coffee Shops, Parks",
+    info4: "Last seen: 8h ago",
   },
   {
     id: 6,
@@ -73,6 +103,12 @@ const data: DataT[] = [
     message:
       "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
     image: IMAGE_06,
+    age: "27",
+    location: "Seattle, WA",
+    info1: 'Straight, Single, 5"7',
+    info2: "Bookworm, Tea Lover",
+    info3: "Bookstores, Tea Shops, Libraries",
+    info4: "Last seen: 6h ago",
   },
   {
     id: 7,
@@ -84,6 +120,12 @@ const data: DataT[] = [
     message:
       "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
     image: IMAGE_07,
+    age: "26",
+    location: "Denver, CO",
+    info1: 'Straight, Single, 5"6',
+    info2: "Hiker, Dog Lover",
+    info3: "Hiking Trails, Dog Parks, Breweries",
+    info4: "Last seen: 4h ago",
   },
   {
     id: 8,
@@ -112,6 +154,12 @@ const data: DataT[] = [
     message:
       "This is what happens when an unstoppable force meets an immovable object.",
     image: IMAGE_09,
+    age: "31",
+    location: "Portland, OR",
+    info1: 'Straight, Single, 5"5',
+    info2: "Artist, Coffee Lover",
+    info3: "Art Galleries, Coffee Shops, Parks",
+    info4: "Last seen: 12h ago",
   },
   {
     id: 10,
@@ -123,6 +171,12 @@ const data: DataT[] = [
     message:
       "You want order in Gotham. Batman must take off his mask and turn himself in.",
     image: IMAGE_10,
+    age: "33",
+    location: "Boston, MA",
+    info1: 'Straight, Single, 6"1',
+    info2: "Runner, Foodie",
+    info3: "Running Trails, Food Trucks, Parks",
+    info4: "Last seen: 10h ago",
   },
 ];
 

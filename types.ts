@@ -22,6 +22,7 @@ export type MessageT = {
 };
 
 export type ProfileItemT = {
+  id: string;
   age?: string;
   info1?: string;
   info2?: string;

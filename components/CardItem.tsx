@@ -10,6 +10,13 @@ import styles, {
   WHITE,
 } from "../assets/styles";
 
+interface CardItemProps extends CardItemT {
+  onPressSupport?: () => void;
+  onPressLike?: () => void;
+  onPressDislike?: () => void;
+  onPressShare?: () => void;
+}
+
 const CardItem = ({
   description,
   hasActions,
@@ -18,7 +25,11 @@ const CardItem = ({
   isOnline,
   matches,
   name,
-}: CardItemT) => {
+  onPressSupport,
+  onPressLike,
+  onPressDislike,
+  onPressShare,
+}: CardItemProps) => {
   // Custom styling
   const fullWidth = Dimensions.get("window").width;
 
@@ -39,6 +50,14 @@ const CardItem = ({
       fontSize: hasVariant ? 15 : 30,
     },
   ];
+
+  const handleLikePress = () => {
+    onPressLike?.();
+  };
+
+  const handleDislikePress = () => {
+    onPressDislike?.();
+  };
 
   return (
     <View style={styles.containerCardItem}>
@@ -75,20 +94,34 @@ const CardItem = ({
       {/* ACTIONS */}
       {hasActions && (
         <View style={styles.actionsCardItem}>
-          <TouchableOpacity style={styles.miniButton}>
-            <Icon name="star" color={STAR_ACTIONS} size={14} />
+          <TouchableOpacity 
+            style={styles.miniButton} 
+            onPress={onPressSupport}
+          >
+            <Icon name="hand-right" size={14} color={STAR_ACTIONS} />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button}>
-            <Icon name="heart" color={LIKE_ACTIONS} size={25} />
+         
+          <TouchableOpacity 
+            style={styles.button}
+            onPress={handleDislikePress}
+            activeOpacity={0.7}
+          >
+            <Icon name="close" size={25} color={DISLIKE_ACTIONS} />
+          </TouchableOpacity>
+          <TouchableOpacity 
+            style={styles.button}
+            onPress={handleLikePress}
+            activeOpacity={0.7}
+          >
+            <Icon name="heart" size={25} color={LIKE_ACTIONS} />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button}>
-            <Icon name="close" color={DISLIKE_ACTIONS} size={25} />
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.miniButton}>
-            <Icon name="flash" color={FLASH_ACTIONS} size={14} />
+          <TouchableOpacity 
+            style={styles.miniButton}
+            onPress={onPressShare}
+          >
+            <Icon name="share" size={14} color={FLASH_ACTIONS} />
           </TouchableOpacity>
         </View>
       )}
